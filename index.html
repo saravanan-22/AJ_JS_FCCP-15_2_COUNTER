@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Counter" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>Counder</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      h4 {
+        font-size: clamp(16px, 3.5vw, 25px);
+      }
+      h1 {
+        font-size: clamp(200px, 3vw, 300px);
+        text-align: center;
+      }
+
+      button {
+        box-shadow: 1px 1px 4px #000;
+      }
+
+      .green {
+        color: green;
+      }
+
+      .red {
+        color: red;
+      }
+
+      .black {
+        color: black;
+      }
+    </style>
+  </head>
+  <body class="vh-100">
+    <section class="shadow-sm p-2 bg-light">
+      <h4 class="text-center">Counter</h4>
+    </section>
+    <main>
+      <div><h1 id="value">0</h1></div>
+      <ul class="d-flex justify-content-center flex-wrap p-0">
+        <li><button class="btn m-2" id="btn1">Decrease</button></li>
+        <li><button class="btn m-2" id="btn2">Reset</button></li>
+        <li><button class="btn m-2" id="btn3">Increase</button></li>
+      </ul>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
